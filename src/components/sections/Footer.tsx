@@ -71,10 +71,10 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="mailto:hola@sojitdigital.com"
+                  href="mailto:sojitdigital@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
-                  hola@sojitdigital.com
+                  sojitdigital@gmail.com
                 </a>
               </li>
               <li className="pt-2">Argentina / Latinoamérica</li>
