@@ -43,7 +43,7 @@ const CTA = () => {
               className="px-8 py-6 text-base font-medium border-border hover:bg-secondary/50 transition-all duration-300"
               asChild
             >
-              <a href="mailto:hola@sojitdigital.com">
+              <a href="mailto:sojitdigital@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 Enviar email
               </a>
