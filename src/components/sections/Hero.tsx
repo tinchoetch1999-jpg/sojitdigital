@@ -60,7 +60,7 @@ const Hero = () => {
               className="group px-8 py-6 text-base font-semibold bg-primary text-primary-foreground hover:bg-primary/90 glow-box transition-all duration-300"
               asChild
             >
-              <a href="https://wa.me/5491100000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/542995925998?text=Hola%2C%20quiero%20más%20información%20sobre%20los%20servicios%20de%20Sojit%20Digital" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Hablá con un especialista
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
