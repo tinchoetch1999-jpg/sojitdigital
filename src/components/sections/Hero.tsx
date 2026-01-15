@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, Shield, Zap, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -12,12 +12,37 @@ const Hero = () => {
       
       {/* Grid pattern */}
       <div 
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundSize: '50px 50px'
         }}
       />
+
+      {/* Floating tech elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          animate={{ y: [-10, 10, -10] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-[15%] left-[10%] w-16 h-16 rounded-xl bg-card/50 border border-primary/20 backdrop-blur-sm flex items-center justify-center"
+        >
+          <Shield className="w-8 h-8 text-primary/60" />
+        </motion.div>
+        <motion.div
+          animate={{ y: [10, -10, 10] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-[20%] right-[15%] w-14 h-14 rounded-xl bg-card/50 border border-primary/20 backdrop-blur-sm flex items-center justify-center"
+        >
+          <Zap className="w-7 h-7 text-primary/60" />
+        </motion.div>
+        <motion.div
+          animate={{ y: [-5, 15, -5] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute bottom-[30%] left-[5%] w-12 h-12 rounded-xl bg-card/50 border border-primary/20 backdrop-blur-sm flex items-center justify-center"
+        >
+          <Users className="w-6 h-6 text-primary/60" />
+        </motion.div>
+      </div>
 
       <div className="container relative z-10 px-4 py-20">
         <motion.div
@@ -31,7 +56,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-primary/30 bg-card/50 backdrop-blur-sm shadow-lg shadow-primary/5"
           >
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
             <span className="text-sm text-muted-foreground">Soluciones digitales para tu negocio</span>
@@ -69,7 +94,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="px-8 py-6 text-base font-medium border-border hover:bg-secondary/50 transition-all duration-300"
+              className="px-8 py-6 text-base font-medium border-primary/30 bg-card/50 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
               asChild
             >
               <a href="#servicios">
@@ -83,28 +108,28 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="mt-16 pt-8 border-t border-border/50"
+            className="mt-16 pt-8 border-t border-border/30"
           >
-            <p className="text-sm text-muted-foreground mb-4">Respuesta en menos de 2 horas</p>
-            <div className="flex flex-wrap justify-center gap-8 text-muted-foreground/60">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                  <span className="text-xs font-bold text-primary">✓</span>
-                </div>
-                <span className="text-sm">Sin contratos largos</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                  <span className="text-xs font-bold text-primary">✓</span>
-                </div>
-                <span className="text-sm">Soporte en español</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                  <span className="text-xs font-bold text-primary">✓</span>
-                </div>
-                <span className="text-sm">Atención personalizada</span>
-              </div>
+            <p className="text-sm text-muted-foreground mb-6">Respuesta en menos de 2 horas</p>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+              {[
+                { text: "Sin contratos largos" },
+                { text: "Soporte en español" },
+                { text: "Atención personalizada" },
+              ].map((item, index) => (
+                <motion.div
+                  key={item.text}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.9 + index * 0.1 }}
+                  className="flex items-center gap-3 px-4 py-2 rounded-full bg-card/50 border border-border/50 backdrop-blur-sm"
+                >
+                  <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
+                    <span className="text-xs font-bold text-primary">✓</span>
+                  </div>
+                  <span className="text-sm text-muted-foreground">{item.text}</span>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </motion.div>
