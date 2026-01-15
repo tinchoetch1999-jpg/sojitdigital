@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, ArrowRight, Mail, Phone } from "lucide-react";
+import { MessageCircle, ArrowRight, Mail, Phone, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CTA = () => {
@@ -62,9 +62,19 @@ const CTA = () => {
               </Button>
             </div>
 
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground mb-4">
               Sin compromisos. Sin costos ocultos. Solo una conversación para ver cómo podemos ayudarte.
             </p>
+
+            <a 
+              href="https://instagram.com/sojitdigital" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+              <span>@sojitdigital</span>
+            </a>
           </div>
         </motion.div>
       </div>
