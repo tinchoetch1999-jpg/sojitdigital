@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Monitor, Cog, Megaphone, MapPin, Mail, Phone } from "lucide-react";
+import { Monitor, Cog, Megaphone, MapPin, Mail, Phone, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -97,6 +97,19 @@ const Footer = () => {
                     <Mail className="w-4 h-4 text-primary" />
                   </div>
                   sojitdigital@gmail.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://instagram.com/sojitdigital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-primary transition-colors group"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Instagram className="w-4 h-4 text-primary" />
+                  </div>
+                  @sojitdigital
                 </a>
               </li>
               <li className="flex items-center gap-2 pt-2">
