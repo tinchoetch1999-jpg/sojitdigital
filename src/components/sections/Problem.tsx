@@ -40,7 +40,7 @@ const Problem = () => {
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
             ¿Qué pasa cuando la tecnología <br className="hidden md:block" />
-            <span className="text-muted-foreground">te falla?</span>
+            <span className="gradient-text">te falla?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Sabemos lo que sentís. Tu negocio depende de sistemas que no siempre funcionan como deberían.
