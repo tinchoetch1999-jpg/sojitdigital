@@ -30,7 +30,7 @@ const CTA = () => {
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-              ¿Listo para que tu tecnología{" "}
+              <span className="text-primary/80">¿Listo para que tu tecnología</span>{" "}
               <span className="gradient-text">deje de ser un dolor de cabeza?</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">

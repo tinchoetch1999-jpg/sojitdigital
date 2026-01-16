@@ -46,7 +46,7 @@ const WhyUs = () => {
               <span className="text-sm text-primary/80 font-medium">¿Por qué elegirnos?</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-              Más que proveedores,{" "}
+              <span className="text-primary/80">Más que proveedores,</span>{" "}
               <span className="gradient-text">socios de tu crecimiento</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

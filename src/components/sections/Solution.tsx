@@ -57,9 +57,9 @@ const Solution = () => {
               <span className="text-sm text-primary/80 font-medium">La solución</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-              Con <span className="gradient-text">Sojit Digital</span>, tu tecnología{" "}
+              <span className="text-primary/80">Con</span> <span className="gradient-text">Sojit Digital</span><span className="text-primary/80">, tu tecnología</span>{" "}
               <br className="hidden md:block" />
-              deja de ser un problema
+              <span className="gradient-text">deja de ser un problema</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Nos encargamos de que todo funcione para que vos puedas enfocarte en lo que mejor sabés hacer: hacer crecer tu negocio.
