@@ -65,7 +65,7 @@ const Services = () => {
             <span className="text-sm text-muted-foreground font-medium">Nuestros servicios</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-            Todo lo que tu negocio necesita{" "}
+            <span className="text-primary/80">Todo lo que tu negocio necesita</span>{" "}
             <br className="hidden md:block" />
             <span className="gradient-text">en un solo lugar</span>
           </h2>

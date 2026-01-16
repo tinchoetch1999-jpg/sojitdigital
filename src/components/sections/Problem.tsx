@@ -39,7 +39,7 @@ const Problem = () => {
             <span className="text-sm text-destructive/80 font-medium">El costo de no actuar</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-            ¿Qué pasa cuando la tecnología <br className="hidden md:block" />
+            <span className="text-primary/80">¿Qué pasa cuando la tecnología</span> <br className="hidden md:block" />
             <span className="gradient-text">te falla?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
