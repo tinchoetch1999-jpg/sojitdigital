@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Monitor, Cog, Megaphone, MapPin, Mail, Phone, Instagram } from "lucide-react";
+import { Monitor, Cog, Megaphone, MapPin, Mail, Send, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -76,16 +76,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Contacto</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a 
-                  href="https://wa.me/542995925998?text=Hola%2C%20quiero%20más%20información%20sobre%20los%20servicios%20de%20Sojit%20Digital" 
-                  target="_blank" 
+                <a
+                  href="https://t.me/sojitdigital"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-primary transition-colors group"
                 >
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Phone className="w-4 h-4 text-primary" />
+                    <Send className="w-4 h-4 text-primary" />
                   </div>
-                  WhatsApp
+                  Telegram: @sojitdigital
                 </a>
               </li>
               <li>
