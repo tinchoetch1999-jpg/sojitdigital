@@ -132,6 +132,10 @@ const Footer = () => {
         >
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Sojit Digital. Todos los derechos reservados.
+            {" "}|{" "}
+            <a href="/privacy" className="hover:text-primary transition-colors">
+              Política de Privacidad
+            </a>
           </p>
         </motion.div>
       </div>
