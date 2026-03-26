@@ -70,7 +70,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance">
-            Soporte IT, automatizaciones y campañas digitales diseñadas para pymes que no pueden darse el lujo de frenar.
+            Soporte IT, integración de IA y proyectos digitales diseñados para pymes que no pueden darse el lujo de frenar.
           </p>
 
           {/* CTAs */}

@@ -52,7 +52,7 @@ const Footer = () => {
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Cog className="w-4 h-4 text-primary" />
                   </div>
-                  Automatizaciones
+                  Integración de IA
                 </a>
               </li>
               <li>
