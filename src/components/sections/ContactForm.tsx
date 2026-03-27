@@ -44,7 +44,7 @@ const ContactForm = () => {
           message: data.consulta,
           title: "Consulta desde el sitio web",
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
       );
       setStatus("success");
       reset();
