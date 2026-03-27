@@ -21,6 +21,7 @@ type FormData = z.infer<typeof schema>;
 
 const ContactForm = () => {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorDetail, setErrorDetail] = useState<string>("");
 
   const {
     register,
@@ -48,8 +49,9 @@ const ContactForm = () => {
       );
       setStatus("success");
       reset();
-    } catch (err) {
+    } catch (err: any) {
       console.error("EmailJS error:", err);
+      setErrorDetail(JSON.stringify(err));
       setStatus("error");
     }
   };
@@ -143,9 +145,10 @@ const ContactForm = () => {
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-destructive text-center">
-          Hubo un error al enviar. Intentá de nuevo o escribinos por Telegram.
-        </p>
+        <div className="text-sm text-destructive text-center">
+          <p>Hubo un error al enviar. Intentá de nuevo o escribinos por Telegram.</p>
+          {errorDetail && <p className="text-xs mt-1 break-all">{errorDetail}</p>}
+        </div>
       )}
 
       <Button
