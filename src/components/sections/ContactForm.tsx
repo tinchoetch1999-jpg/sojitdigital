@@ -36,11 +36,13 @@ const ContactForm = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
+          name: data.nombre,
           from_name: data.nombre,
           from_email: data.email,
+          email: data.email,
           phone: data.telefono,
           message: data.consulta,
-          to_email: "sojitdigital@gmail.com",
+          title: "Consulta desde el sitio web",
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
