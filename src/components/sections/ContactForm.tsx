@@ -48,7 +48,8 @@ const ContactForm = () => {
       );
       setStatus("success");
       reset();
-    } catch {
+    } catch (err) {
+      console.error("EmailJS error:", err);
       setStatus("error");
     }
   };
